@@ -21,11 +21,14 @@ body {
 .other {
     width: 50%;
     height: 100vh;
+    background-color: black;
+    color: rgb(224, 59, 139);
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .heading {
     padding: 2rem;
-    padding-right: 6rem;
+    padding-right: 8rem;
     margin-top: 4rem;
 
 }
@@ -41,8 +44,8 @@ h2 {
     align-items: center;
     margin-top: 40%;
     color: rgb(203, 201, 201);
-    border-top: 2px solid rgb(203, 201, 201);
-    border-bottom: 2px solid rgb(203, 201, 201);
+    border-top: 2px solid yellow;
+    border-bottom: 2px solid yellow;
     padding-top: 1rem;
     padding-bottom: 1rem;
     background-color: rgba(249, 133, 0, 0.297);
@@ -67,4 +70,44 @@ h2 {
 
 .caption {
     margin-top: auto;
+}
+
+.form-area {
+    margin: 1rem;
+    padding: 2rem;
+    color: rgb(224, 59, 139);
+    border: 2px solid rgb(224, 59, 139);
+    border-radius: 8px;
+}
+
+.legend {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.labelNinput {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.left, .right {
+    width: 35%;
+}
+
+.right {
+    margin-left: 2rem;
+}
+
+.inputs {
+    display: flex;
+} 
+
+input {
+    height: 1.5rem;
+    background-color: rgba(234, 200, 9, 0.066);
+    border: 1px solid rgb(224, 59, 139);
+    border-radius: 4px;
+    color: rgb(224, 59, 139)
 }
