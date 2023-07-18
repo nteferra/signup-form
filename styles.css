@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+    background-color: #000;
+}
+
 body {
     display: flex;
 }
@@ -27,13 +31,13 @@ body {
 }
 
 .heading {
+    margin: 1rem;
     padding: 2rem;
-    padding-right: 8rem;
-    margin-top: 4rem;
+    margin-top: 10rem;
 
 }
 
-h2 {
+h3 {
     margin-bottom: 1rem;
 }
 
@@ -42,7 +46,6 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40%;
     color: rgb(203, 201, 201);
     text-shadow:
     -1px -1px 0 #000,
@@ -54,11 +57,11 @@ h2 {
 }
 
 #logo-icon {
-    font-size: 8rem;
+    font-size: 6vw;
 }
 
 #logo-text {
-    font-size: 6rem;
+    font-size: 5vw;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -67,18 +70,25 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .caption {
-    margin-top: auto;
+    position: absolute;
+    bottom: 0;
+    color: black;
+    
+}
+
+.caption a {
+    text-decoration: none;
 }
 
 .form-area {
     margin: 1rem;
     padding: 2rem;
-    color: gold;
-    border: 2px solid rgb(224, 59, 139);
-    border-radius: 8px;
+    color: rgb(224, 59, 139);
+
 }
 
 .legend {
@@ -136,15 +146,70 @@ button {
 
 }
 
+.login {
+    margin-left: 3rem;
+    margin-top: 1.5rem;
+    font-size: 12pt;
+}
+
+.login a {
+    text-decoration: none;
+    color: gold;
+}
+
+.login a:hover {
+    text-decoration: underline;
+}
+
 @media (max-width: 900px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    .image-area {
+        width: 100%;
+        height: 20vh;
+    }
+    #logo-icon, #logo-text {
+        font-size: 4rem;
+    }
+    .other {
+        width: 100%;
+        text-align: center;
+    }
     .row {
         display: block;
-
+        text-align: center;
     }
     .r {
         margin-left: 0;
     }
     .labelNinput {
         width: 75%;
+        margin: 1rem auto;
     }
+
+    .form-area {
+        text-align: center;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .heading {
+        text-align: center;
+        margin-top: 1rem
+    }
+    form {
+        text-align: center;
+    }
+    button {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+    .login {
+        margin-left: 0;
+    }
+    .caption {
+        display: none;
+    }
+
 }
