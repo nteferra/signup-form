@@ -23,7 +23,7 @@ body {
     height: 100vh;
     background-color: black;
     color: rgb(224, 59, 139);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 .heading {
@@ -75,7 +75,7 @@ h2 {
 .form-area {
     margin: 1rem;
     padding: 2rem;
-    color: rgb(224, 59, 139);
+    color: gold;
     border: 2px solid rgb(224, 59, 139);
     border-radius: 8px;
 }
@@ -88,26 +88,33 @@ h2 {
 
 .labelNinput {
     display: flex;
+    width: 35%;
     flex-direction: column;
     margin-bottom: 1rem;
+    color: rgb(224, 59, 139);
 }
 
-.left, .right {
-    width: 35%;
+.row {
+    display: flex;
 }
 
-.right {
-    margin-left: 2rem;
-}
 
 .inputs {
-    display: flex;
+    display: grid;
 } 
 
 input {
-    height: 1.5rem;
+    height: 2rem;
     background-color: rgba(234, 200, 9, 0.066);
     border: 1px solid rgb(224, 59, 139);
     border-radius: 4px;
-    color: rgb(224, 59, 139)
+    color: gold
+}
+
+input:focus {
+    border: 2px solid gold;
+}
+
+.r {
+    margin-left: 2rem;
 }

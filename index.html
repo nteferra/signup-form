@@ -23,31 +23,32 @@
             <form action="" method="post">
                 <legend class="legend">Let's Do This!</legend>
                 <div class="inputs">
-                    <div class="left">
+                    <div class="row">
                         <div class="labelNinput">
                             <label for="first_name">First Name</label>
                             <input required type="text" id="first_name" name="first_name">
                         </div>
+                        <div class="labelNinput r">
+                            <label for="last_name">Last Name</label>
+                            <input required type="text" id="last_name" name="last_name">
+                        </div>   
+                    </div>
+                    <div class="row">
                         <div class="labelNinput">
                             <label for="email">Email</label>
                             <input required type="email" id="email" name="email">
                         </div>
+                        <div class="labelNinput r">
+                            <label for="phone">Phone Number</label>
+                            <input required type="tele" id="phone" name="phone">
+                        </div>
+                    </div>
+                    <div class="row">
                         <div class="labelNinput">
                             <label for="password">Password</label>
                             <input required type="password" id="password" name="password">
                         </div>
-                        
-                    </div>
-                    <div class="right">
-                        <div class="labelNinput">
-                            <label for="last_name">Last Name</label>
-                            <input required type="text" id="last_name" name="last_name">
-                        </div>
-                        <div class="labelNinput">
-                            <label for="phone">Phone Number</label>
-                            <input required type="tele" id="phone" name="phone">
-                        </div>
-                        <div class="labelNinput">
+                        <div class="labelNinput r">
                             <label for="confirm">Confirm Password</label>
                             <input required type="password" id="confirm" name="confirm">
                         </div>
